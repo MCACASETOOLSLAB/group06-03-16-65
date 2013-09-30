@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>BUSY WAITING</title>
+</head>
+
+<body bgcolor="#993366">
+<p>BUSY-WAITING:::::::::::::::::::::::::::::</p>
+<p>As long as a process is denied access to its critical section,
+it will   stay in a tight loop and wait until it can proceed, 
+all the while   wasting processor time.  This continuous testing of the lock variable is   called <strong> busy waiting</strong>.</p>
+
+
+<p> Here, in this problem when there are 3 elves present with the santa seeking for his help for constructing toys....the fourth elf has to wait untill all the 3 elf are served by the santa, till that time the fourth elf stays in a tight loop and wait for santa to be free.This continuous waiting of the elf is said to be <strong>busy waitng</strong>. </p>
+
+
+<p><img src="final.png" alt="image" width="1500" height="1500"></p>
+</body>
+
+
+</html>
