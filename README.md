@@ -32,9 +32,6 @@
   <p align="center" class="style1">&nbsp;</p>
   <p align="right">&nbsp;</p>
   <blockquote>
-    <p align="right"><img src="santa.jpg" alt="Santa" width="175" height="175" vspace="0" align="left" /><img src="elf.jpg" alt="elf" width="133" height="168" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="rend.jpg" alt="reindeer" width="100" height="100" /></p>
-  </blockquote>
-  <blockquote>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p><strong>THE SOLUTION TO THIS PROBLEM IS DISCRIBED UNDER FOLLOWING LINKS::::::::::::::: </strong></p>
