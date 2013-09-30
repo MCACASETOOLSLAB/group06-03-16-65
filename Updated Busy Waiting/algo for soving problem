@@ -1,0 +1,61 @@
+                      
+                      ALGORITHM
+                
+  We now give an outline of the solution using semaphores, omitting the details of the calculations of the global variables and the semaphores protecting them.
+There is a single Santa process which waits on the semaphoreSanta; it will be awakened by the ninth reindeer or the third elf. If awakened by the last
+reindeer, Santa executes as follows: awaken the eight other reindeer, harness all nine reindeer to the sleigh, deliver the toys and unharness the reindeer. The
+algorithm for the elves is similar.
+
+
+loop
+ P(Santa);
+ if All_Reindeer_Ready then
+  for All_Waiting_Reindeer loop
+   V(Reindeer_Wait);
+   end loop;
+ for All_Reindeer loop
+ V(Harness);
+ end loop;
+ Deliver_Toys;
+ for All_Reindeer loop
+ V(Unharness);
+ end loop;
+ else -- All_Elves_Ready
+ for All_Waiting_Elves loop
+ V(Elf_Wait);
+ end loop;
+ for All_Elves loop
+ V(Invite_In);
+ end loop;
+ Consult;
+ for All_Elves loop
+ V(Show_Out);
+ end loop;
+ end if;
+end loop;
+
+
+
+Turning to the reindeer processes, the first eight reindeer returning from vacation are blocked on the semaphore
+Reindeer_Wait; the ninth reindeer wakes Santa who proceeds to awaken the other eight blocked reindeer. The elf 
+processes are similar.
+
+
+loop
+  if Is_Last_Reindeer then
+  V(Santa);
+  else
+  P(Reindeer_Wait);
+  end if;
+  P(Harness);
+  Deliver_Toys;
+  P(Unharness);
+end loop;
+
+
+The problem with this solution is the assumption that once the reindeer have been released from waiting on Reindeer_Wait, they will be harnessed and
+deliver toys together with Santa. But nothing prevents a malicious scheduler from scheduling Santa, who now proceeds 
+to harness the reindeer, deliver the toys himself, and unharness the reindeer, before the reindeer have executed
+Deliver_Toys or even P(Harness) ! Recall that V operations never block; a V operation on a strong semaphore will
+release blocked processes, but such ready processes do not necessarily run. In fact, a truly miserly scheduler could now
+have Santa retire and consult indefinitely, to the consternation of the reindeer freezing in the stable.
