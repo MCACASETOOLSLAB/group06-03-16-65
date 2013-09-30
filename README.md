@@ -4,17 +4,7 @@
 <head>
 
 <title>Read Me</title>
-<style type="text/css">
-<!--
-.style1 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-}
-.style2 {font-size: 36px}
-.style3 {font-size: 24px}
--->
-</style>
+
 </head>
 
 <body bgcolor="#999999">
