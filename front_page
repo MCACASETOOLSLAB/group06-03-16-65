@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<blockquote>
+  <h1 align="center" class="style1">SANTA CLAUS PROBLEM</h1>
+  <form>
+    <input name="BUTTON" type="BUTTON" onclick="window.location.href='http://localhost/git%20hub/critical.html'" value="Critical Section" /><br>
+ 	<input name="BUTTON" type="BUTTON" onclick="window.location.href='http://localhost/git%20hub/Semaphores.html'" value="Semaphores" /><br>
+ 	<input name="BUTTON" type="BUTTON" onclick="window.location.href='http://localhost/git%20hub/Busy_Waiting.html'" value="Busy Waiting" /><br>
+ 	<input name="BUTTON" type="BUTTON" onclick="window.location.href='http://localhost/git%20hub/Spin_locks.html'" value="Spinlocks" /><br>
+ 	<input name="BUTTON" type="BUTTON" onclick="window.location.href='http://localhost/git%20hub/Monitors.html'" value="Monitors" /><br>
+  </form>
+
+
+  <p align="right"> <img src="santa.jpg" alt="Santa" width="225" height="244" vspace="0" align="middle" /></p>
+  <p align="right"><img src="elf.jpg" alt="elf" width="120" height="120" hspace="0" vspace="0" /></p>
+  <p align="right"><img src="rend.jpg" alt="reindeer" width="150" height="150" /></p>
+</blockquote>
+</body>
+</html>
